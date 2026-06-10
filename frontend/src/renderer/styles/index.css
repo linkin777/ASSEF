@@ -1,0 +1,89 @@
+@import "@fontsource-variable/figtree";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    --popover: #ffffff;
+    --popover-foreground: #0f172a;
+    --primary: #0f172a;
+    --primary-foreground: #f8fafc;
+    --secondary: #f1f5f9;
+    --secondary-foreground: #0f172a;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --accent: #f1f5f9;
+    --accent-foreground: #0f172a;
+    --destructive: #ef4444;
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --ring: #0ea5e9;
+    --radius: 0.625rem;
+    --sidebar: #f1f5f9;
+    --sidebar-foreground: #0f172a;
+    --sidebar-primary: #0f172a;
+    --sidebar-primary-foreground: #f8fafc;
+    --sidebar-accent: #f1f5f9;
+    --sidebar-accent-foreground: #0f172a;
+    --sidebar-border: #e2e8f0;
+    --sidebar-ring: #0ea5e9;
+
+    --shadow-glow-cyan: 0 0 12px rgba(0, 240, 255, 0.15);
+    --shadow-glow-red: 0 0 12px rgba(255, 68, 68, 0.15);
+    --shadow-glow-blue: 0 0 12px rgba(68, 136, 255, 0.15);
+    --shadow-glow-yellow: 0 0 12px rgba(255, 170, 0, 0.15);
+  }
+
+  .dark,
+  html.dark {
+    --background: #0a0e17;
+    --foreground: #e2e8f0;
+    --card: #0f172a;
+    --card-foreground: #e2e8f0;
+    --popover: #0f172a;
+    --popover-foreground: #e2e8f0;
+    --primary: #e2e8f0;
+    --primary-foreground: #0f172a;
+    --secondary: #1e293b;
+    --secondary-foreground: #e2e8f0;
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+    --accent: #1e293b;
+    --accent-foreground: #e2e8f0;
+    --destructive: #ef4444;
+    --border: rgba(55, 65, 81, 0.5);
+    --input: rgba(55, 65, 81, 0.5);
+    --ring: #0ea5e9;
+    --sidebar: #070b13;
+    --sidebar-foreground: #e2e8f0;
+    --sidebar-primary: #00f0ff;
+    --sidebar-primary-foreground: #0a0e17;
+    --sidebar-accent: #1e293b;
+    --sidebar-accent-foreground: #e2e8f0;
+    --sidebar-border: rgba(55, 65, 81, 0.5);
+    --sidebar-ring: #0ea5e9;
+
+    --shadow-glow-cyan: 0 0 16px rgba(0, 240, 255, 0.25);
+    --shadow-glow-red: 0 0 16px rgba(255, 68, 68, 0.25);
+    --shadow-glow-blue: 0 0 16px rgba(68, 136, 255, 0.25);
+    --shadow-glow-yellow: 0 0 16px rgba(255, 170, 0, 0.25);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    @apply font-sans;
+  }
+}

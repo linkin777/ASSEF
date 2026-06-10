@@ -1,0 +1,26 @@
+# Python
+**/__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+.mypy_cache/
+
+# Backend logs
+backend/logs/
+history/
+
+# Frontend
+frontend/logs/
+frontend/node_modules/
+frontend/out/
+
+# Environment files
+.env
+config.json
+
+# workspace specs
+.trae/
+.idea/
+.vscode/
+.claude/
